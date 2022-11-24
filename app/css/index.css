@@ -31,6 +31,11 @@ body {
 #bg .navbar .menu {
   margin: auto 5px auto auto;
 }
+@media (min-width: 768px) {
+  #bg .navbar .menu {
+    display: none;
+  }
+}
 #bg .navbar .menu img {
   height: 2em;
 }

@@ -25,6 +25,9 @@ body {
             font-size: 1.6em;
         }
         .menu {
+            @media (min-width: 768px) {
+                display: none;
+            }
             margin: auto 5px auto auto;
             img {
                 height: 2em;
