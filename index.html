@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admiral General Aladeen</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria&display=swap" rel="stylesheet">
+    <script>
+        const showSidebar = () => {
+            const sidebar = document.getElementsByClassName("sidebar")[0];
+            sidebar.classList.add("show");
+            const overlay = document.getElementsByClassName("overlay")[0];
+            overlay.classList.add("show");
+
+        }
+        const hideSidebar = () => {
+            const sidebar = document.getElementsByClassName("sidebar")[0];
+            sidebar.classList.remove("show");
+            const overlay = document.getElementsByClassName("overlay")[0];
+            overlay.classList.remove("show");
+        }
+    </script>
+</head>
+
+<body>
+    <div id="bg">
+        <div class="navbar">
+            <div class="logo">Aladeen</div>
+            <div class="menu" onclick="showSidebar()"><img src="images/menu.svg" /></div>
+        </div>
+        <div class="sidebar">
+            <div class="close" onclick="hideSidebar()"><img src="images/cancel.svg" /></div>
+        </div>
+        <div class="overlay"></div>
+        <div class="responsive">
+            <div class="main">
+                <div class="photo">
+                    <img src="images/photo.jpeg" />
+                </div>
+                <div class="intro">
+                    <div class="headline">Hi, I'm Admiral General Aladeen,</div>
+                    <div>
+                        I was born to Omar Aladeen and a French Stewardess, who died in childbirth, 1973.
+                    </div>
+                    <div>
+                        Being the only son of Omar Aladeen, I was the sole successor to my father's position.
+                    </div>
+                    <div>
+                        I grew up and went to study in Switzerland and continued onto university, attending the University of Aladeen, and the North West Aladeen University.
+                    </div>
+                    <div>
+                        I earned a total of 118 PhD's and 30 post-docs.
+                    </div>
+                </div>
+                <div class="note">Aladeen gave an inspiring speech regarding Western treachery as soon as he was born. - Wadiyan Sources</div>
+            </div>
+            <div class="secondary">
+                <div class="main2">
+                    <h2>Work</h2>
+                    <hr class="divider" />
+                    <div class="intro">
+                        <div>
+                            While completing my 99th Ph.D., I became the Head of the WSE (Wadiyan Secret Espionage Agency).
+                        </div>
+                        <div>
+                            The Government and WSE considered my missions to be an uncontested failure since I had succeeded in killing more astronauts when compared with US and USSR.
+                        </div>
+                        <div>
+                            I executed all of the Generals in the agency.
+                        </div>
+                        <div>
+                            I also conducted several experiments while working at the Torture Program by using his political opponents as test subjects.
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+body {
+  background-color: #232324;
+  color: white;
+  font-family: "Alexandria", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow-x: hidden;
+}
+#bg .navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: auto;
+  margin: 5px;
+}
+#bg .navbar .logo {
+  font-size: 1.6em;
+}
+#bg .navbar .menu {
+  margin: auto 5px auto auto;
+}
+#bg .navbar .menu img {
+  height: 2em;
+}
+#bg .sidebar {
+  position: absolute;
+  height: 100%;
+  width: 250px;
+  top: 0;
+  right: -260px;
+  z-index: 2;
+  background-color: white;
+  padding: 5px;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+@media (min-width: 768px) {
+  #bg .sidebar {
+    width: 400px;
+    right: -410px;
+  }
+}
+#bg .sidebar .close {
+  width: 2em;
+  margin: auto 5px auto auto;
+}
+#bg .sidebar .close img {
+  height: 2em;
+}
+#bg .overlay {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#bg .overlay.show {
+  display: block;
+}
+#bg .sidebar.show {
+  display: block;
+  right: 0;
+}
+@media (min-width: 768px) {
+  #bg .responsive {
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    margin: 50px auto auto auto;
+    width: 90%;
+  }
+  #bg .responsive .secondary {
+    border-radius: 20px;
+  }
+}
+#bg .main {
+  margin: 10px auto;
+  max-width: 350px;
+}
+@media (min-width: 768px) {
+  #bg .main {
+    max-width: 80%;
+  }
+}
+#bg .main .photo {
+  opacity: 90%;
+  display: flex;
+  width: 100%;
+  margin: 20px auto;
+}
+#bg .main .photo img {
+  margin: auto;
+  width: 50%;
+  border: solid 2px white;
+  border-radius: 50%;
+}
+#bg .main .intro {
+  margin: 10px auto;
+  font-size: 0.8em;
+  line-height: 1.5;
+  width: 90%;
+}
+@media (min-width: 768px) {
+  #bg .main .intro {
+    font-size: 1em;
+    width: 100%;
+  }
+}
+#bg .main .intro .headline {
+  font-size: 1.2em;
+  margin: 5px auto;
+}
+@media (min-width: 768px) {
+  #bg .main .intro .headline {
+    font-size: 1.5em;
+  }
+}
+#bg .main .note {
+  text-align: center;
+  font-style: italic;
+  padding: 10px;
+  background-color: white;
+  color: #232324;
+}
+@media (min-width: 768px) {
+  #bg .main .note {
+    font-size: 1.2em;
+  }
+}
+#bg .secondary {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+#bg .secondary .main2 {
+  margin: auto;
+  max-width: 350px;
+}
+@media (min-width: 768px) {
+  #bg .secondary .main2 {
+    max-width: 80%;
+  }
+}
+#bg .secondary .main2 h2 {
+  margin: 0;
+}
+#bg .secondary .main2 .divider {
+  margin: 0;
+  padding: 0;
+  background-color: #232324;
+  border: none;
+  height: 1px;
+  width: 100%;
+}
+#bg .secondary .main2 .intro {
+  margin: 10px auto;
+  font-size: 0.8em;
+  line-height: 1.5;
+  width: 90%;
+}
+@media (min-width: 768px) {
+  #bg .secondary .main2 .intro {
+    width: 100%;
+    font-size: 1em;
+  }
+}/*# sourceMappingURL=index.css.map */
