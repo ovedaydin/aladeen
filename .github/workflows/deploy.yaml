@@ -24,7 +24,7 @@ jobs:
           command: c
           files: |
             app/
-            aptain-definition
+            captain-definition
           outPath: deploy.tar
 
       # - uses: a7ul/tar-action@v1.1.0
