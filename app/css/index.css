@@ -9,8 +9,15 @@ body {
 #bg {
   width: 100%;
   height: 100%;
+  margin: auto;
+  max-width: 1250px;
   position: absolute;
   overflow-x: hidden;
+}
+@media (min-width: 768px) {
+  #bg {
+    position: unset;
+  }
 }
 #bg .navbar {
   display: grid;
@@ -42,8 +49,7 @@ body {
 }
 @media (min-width: 768px) {
   #bg .sidebar {
-    width: 400px;
-    right: -410px;
+    display: none;
   }
 }
 #bg .sidebar .close {
@@ -66,9 +72,19 @@ body {
 #bg .overlay.show {
   display: block;
 }
+@media (min-width: 768px) {
+  #bg .overlay.show {
+    display: none;
+  }
+}
 #bg .sidebar.show {
   display: block;
   right: 0;
+}
+@media (min-width: 768px) {
+  #bg .sidebar.show {
+    display: none;
+  }
 }
 @media (min-width: 768px) {
   #bg .responsive {
