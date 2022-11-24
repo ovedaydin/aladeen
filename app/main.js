@@ -14,9 +14,7 @@ const pathname = window.location.pathname
 const pathArray = window.location.pathname.split('/')
 const lastItemOfPathname = pathArray[pathArray.length - 1]
 const mainPath = pathname.replace(lastItemOfPathname, '')
-console.log(mainPath)
 const logo = document.getElementById('logo')
-console.log(logo)
 logo.href = mainPath
 const press = document.getElementById('press')
 press.href = mainPath + 'press.html'
