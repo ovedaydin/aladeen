@@ -4,9 +4,6 @@ on:
   push:
     branches: [ "production" ]
 
-  pull_request:
-    branches: [ "production" ]
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -26,18 +23,6 @@ jobs:
             app/
             captain-definition
           outPath: deploy.tar
-
-      # - uses: a7ul/tar-action@v1.1.0
-      #   with:
-      #     command: c
-      #     cwd: "./"
-      #     files: |
-      #       app/
-      #       frontend/dist/
-      #       captain-definition
-      #     outPath: deploy.tar
-
-
   
       - name: Deploy App to CapRover
         uses: caprover/deploy-from-github@v1.0.1
